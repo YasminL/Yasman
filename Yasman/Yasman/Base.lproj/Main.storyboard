@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Players-->
         <scene sceneID="HpG-rl-nFu">
             <objects>
                 <tableViewController id="TFa-fm-FAe" sceneMemberID="viewController">
@@ -35,17 +35,17 @@
                             <outlet property="delegate" destination="TFa-fm-FAe" id="rg0-tX-e95"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4a8-cI-544"/>
+                    <navigationItem key="navigationItem" title="Players" id="4a8-cI-544"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juT-n9-QvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="-90"/>
         </scene>
-        <!--Players Tab-->
+        <!--Guestures Tab-->
         <scene sceneID="WOQ-6q-EgA">
             <objects>
-                <viewController title="Players Tab" id="bUu-DX-uxk" sceneMemberID="viewController">
+                <viewController title="Guestures Tab" id="bUu-DX-uxk" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xQk-ti-g5Q"/>
                         <viewControllerLayoutGuide type="bottom" id="c7W-fx-CTw"/>
@@ -55,11 +55,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gestures" id="ThA-fg-Gud"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures" id="ThA-fg-Gud"/>
+                    <navigationItem key="navigationItem" title="Guestures" id="5XU-0p-iwI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EM9-LN-UkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248" y="637"/>
+            <point key="canvasLocation" x="764" y="648"/>
+        </scene>
+        <!--Players-->
+        <scene sceneID="Nj3-ug-cTo">
+            <objects>
+                <navigationController title="Players" id="S1t-pG-6eU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guestures" image="Players" id="D1l-Ks-5pv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BLL-Ur-nKp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bUu-DX-uxk" kind="relationship" relationship="rootViewController" id="Lzv-Uk-p2C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0K-r8-tyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="648"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qPj-4D-RMJ">
@@ -73,7 +91,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="tgn-pH-evC" kind="relationship" relationship="viewControllers" id="CQQ-m5-acu"/>
-                        <segue destination="bUu-DX-uxk" kind="relationship" relationship="viewControllers" id="NG0-iM-sXV"/>
+                        <segue destination="S1t-pG-6eU" kind="relationship" relationship="viewControllers" id="Nc1-L6-l1c"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxf-UT-YJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,7 +102,7 @@
         <scene sceneID="1dY-bu-QZS">
             <objects>
                 <navigationController title="Gestures Tab" automaticallyAdjustsScrollViewInsets="NO" id="tgn-pH-evC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Players" id="Tbm-32-RXq"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="Players" id="Tbm-32-RXq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ge2-ZS-glj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -100,4 +118,8 @@
             <point key="canvasLocation" x="232" y="-90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gestures" width="30" height="30"/>
+        <image name="Players" width="30" height="30"/>
+    </resources>
 </document>
