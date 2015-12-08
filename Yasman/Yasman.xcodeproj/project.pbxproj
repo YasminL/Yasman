@@ -105,6 +105,9 @@
 		CCF9E18A1C17336F008EE500 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Button_No,
+				);
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Yasmin;
 				TargetAttributes = {
