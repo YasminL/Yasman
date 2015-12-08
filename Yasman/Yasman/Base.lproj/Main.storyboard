@@ -13,6 +13,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oyD-mK-kIx">
+                            <rect key="frame" x="0.0" y="136" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pGv-1U-ZiL">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
@@ -35,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="764" y="-90"/>
         </scene>
-        <!--Second Tab-->
+        <!--Players Tab-->
         <scene sceneID="WOQ-6q-EgA">
             <objects>
-                <viewController title="Second Tab" id="bUu-DX-uxk" sceneMemberID="viewController">
+                <viewController title="Players Tab" id="bUu-DX-uxk" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xQk-ti-g5Q"/>
                         <viewControllerLayoutGuide type="bottom" id="c7W-fx-CTw"/>
@@ -48,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ThA-fg-Gud"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" id="ThA-fg-Gud"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EM9-LN-UkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,19 +72,19 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="bUu-DX-uxk" kind="relationship" relationship="viewControllers" id="NG0-iM-sXV"/>
                         <segue destination="tgn-pH-evC" kind="relationship" relationship="viewControllers" id="CQQ-m5-acu"/>
+                        <segue destination="bUu-DX-uxk" kind="relationship" relationship="viewControllers" id="NG0-iM-sXV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxf-UT-YJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-512" y="329"/>
+            <point key="canvasLocation" x="-516" y="291"/>
         </scene>
-        <!--Item-->
+        <!--Gestures Tab-->
         <scene sceneID="1dY-bu-QZS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tgn-pH-evC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Tbm-32-RXq"/>
+                <navigationController title="Gestures Tab" automaticallyAdjustsScrollViewInsets="NO" id="tgn-pH-evC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Players" id="Tbm-32-RXq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ge2-ZS-glj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
